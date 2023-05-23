@@ -37,3 +37,11 @@ body {
   font-family: 'Montserrat';
 }
 
+.aspect-4\/5 {
+  aspect-ratio: 4/5;
+}
+
+.min-w-1 {
+  min-width: 1rem;
+}
+
