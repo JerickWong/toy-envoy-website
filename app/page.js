@@ -5,14 +5,16 @@ export default function Home() {
   return (
     <div className='max-h-screen min-h-screen flex flex-col'>
       <nav className="flex items-center justify-center">
-        <Image
-          src="/logo.png"
-          alt="Toy Envoy Logo"
-          className="dark:invert"
-          width={100}
-          height={24}
-          priority
-        />
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            alt="Toy Envoy Logo"
+            className="dark:invert"
+            width={100}
+            height={24}
+            priority
+          />
+        </Link>
       </nav>
       <hr class="m-2 border-t-4 border-black" />
       <div className="flex items-center justify-center overflow-hidden relative">
