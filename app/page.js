@@ -17,33 +17,37 @@ export default function Home() {
         </Link>
       </nav>
       <hr class="m-2 border-t-4 border-black" />
-      <div className="flex items-center justify-center overflow-hidden relative">
-        <Image
-          src="/vintage-car.jpg"
-          alt="Toy Envoy Logo"
-          className="object-fill aspect-4/5 w-2/4"
-          width={1000}
-          height={10}
-        />
-        <Image
-          src="/cube.jpeg"
-          alt="Cube"
-          className="object-fill aspect-4/5 w-2/4"
-          width={1000}
-          height={10}
-        />
-        <nav className="flex items-between justify-center absolute w-full bottom-50">
-          <div className='flex flex-1 justify-center'>
-            <Link href="/cars" className="p-2 text-white text-7xl font-montserrat hover:scale-110 transition-transform border-2 px-28 duration-300">
+      <div className="row">
+        <div className='image-row'>
+          <Image
+            src="/vintage-car.jpg"
+            alt="Toy Envoy Logo"
+            className="h-full object-cover"
+            width={1000}
+            height={10}
+          />
+          <div className='image-caption'>
+            <Link href="/cars" className="caption">
               cars
             </Link>
           </div>
-          <div className='flex flex-1 justify-center'>
-            <Link href="/collectibles" className="p-2 text-white text-7xl font-montserrat hover:scale-110 transition-transform border-2 px-28 duration-300">
+        </div>
+        <div className='image-row'>
+          <Image
+            src="/cube.jpeg"
+            alt="Cube"
+            className="h-full object-cover"
+            width={1000}
+            height={10}
+          />
+          <div className='image-caption'>
+            <Link href="/collectibles" className="caption">
               collectibles
             </Link>
           </div>
-        </nav>
+        </div>
+        {/* <nav className="flex items-between justify-center absolute w-full bottom-50">
+        </nav> */}
         
       </div>
     </div>
