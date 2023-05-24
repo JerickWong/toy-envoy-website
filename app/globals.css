@@ -20,12 +20,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 /* Apply the font family to the desired elements */
@@ -40,8 +34,3 @@ body {
 .aspect-4\/5 {
   aspect-ratio: 4/5;
 }
-
-.min-w-1 {
-  min-width: 1rem;
-}
-

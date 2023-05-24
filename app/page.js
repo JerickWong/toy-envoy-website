@@ -23,9 +23,6 @@ export default function Home() {
           width={1000}
           height={10}
         />
-        <div className='h-full w-4 min-w-1'>
-          {' '}
-        </div>
         <Image
           src="/cube.jpeg"
           alt="Cube"
@@ -35,12 +32,12 @@ export default function Home() {
         />
         <nav className="flex items-between justify-center absolute w-full bottom-50">
           <div className='flex flex-1 justify-center'>
-            <Link href="/cars" className="p-2 text-white text-7xl font-montserrat hover:text-gray-500 border-2 px-28">
+            <Link href="/cars" className="p-2 text-white text-7xl font-montserrat hover:scale-110 transition-transform border-2 px-28 duration-300">
               cars
             </Link>
           </div>
           <div className='flex flex-1 justify-center'>
-            <Link href="/collectibles" className="p-2 text-white text-7xl font-montserrat hover:text-gray-500 border-2 px-28">
+            <Link href="/collectibles" className="p-2 text-white text-7xl font-montserrat hover:scale-110 transition-transform border-2 px-28 duration-300">
               collectibles
             </Link>
           </div>
