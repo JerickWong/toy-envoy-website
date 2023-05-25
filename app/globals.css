@@ -71,7 +71,7 @@ text-white text text-5xl font-montserrat hover:scale-110 transition-transform bo
 }
 
 @media (min-width: 1350px) {
-  .text {
+  .caption {
     font-size: 3.5rem;
     line-height: 3rem;
     padding: 1rem 7rem;
