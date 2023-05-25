@@ -96,3 +96,73 @@ body {
   height: 96vh;
 }
 
+
+.nav-header {
+  min-height: 94px;
+  /* border: solid violet 2px; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-main {
+  /* min-height: 100px; */
+  /* border: solid blue 2px; */
+}
+
+.nav-main > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-main > ul > li {
+  font-size: 2.5rem;
+  font-family: "sans serif";
+}
+
+.nav-main > ul > li > a {
+  padding: 1px 12px;
+}
+
+.active {
+  border: solid 2px;
+  border-bottom: 0px;
+}
+
+.button-interested {
+  color: white;
+  background-color: black;
+  padding: 4px 20px; 
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  max-width: 16rem;
+}
+
+.button-interested:hover {
+  background-color: #2d3748; /* This is the color for bg-gray-900 in Tailwind */
+}
+
+.button-interested:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #e2e8f0; /* This is the color for ring and ring-gray-300 in Tailwind */
+}
+
+@media (prefers-color-scheme: dark) {
+  .button-interested {
+      background-color: #2d3748; /* This is the color for bg-gray-800 in Tailwind */
+      border-color: #4a5568; /* This is the color for border-gray-700 in Tailwind */
+  }
+
+  .button-interested:hover {
+      background-color: #4a5568; /* This is the color for hover:bg-gray-700 in Tailwind */
+  }
+
+  .button-interested:focus {
+      box-shadow: 0 0 0 4px #4a5568; /* This is the color for focus:ring-gray-700 in Tailwind */
+  }
+}
+
+.max-w-half-screen {
+  max-width: 40vw;
+}
