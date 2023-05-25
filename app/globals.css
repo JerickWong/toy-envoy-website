@@ -91,3 +91,8 @@ body {
 .font-montserrat {
   font-family: 'Montserrat';
 }
+
+.h-96 {
+  height: 96vh;
+}
+

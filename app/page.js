@@ -19,13 +19,17 @@ export default function Home() {
       <hr className="m-2 border-t-4 border-black" />
       <div className="row">
         <div className='image-row'>
-          <Image
-            src="/vintage-car.jpg"
-            alt="Vintage Car"
-            className="h-full w-full object-cover"
-            width={1000}
+          <img
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            /vintage-car-300.jpg 300w,
+            /vintage-car-903.jpg 903w,
+            /vintage-car-1200.jpg 1200w"
+            src="/vintage-car-1200.jpg"
+            width={'100%'}
             height={10}
-          />
+            className='object-cover h-96'
+            alt="Vintage car" />
           <div className='image-caption'>
             <Link href="/cars" className="caption">
               cars
@@ -33,22 +37,21 @@ export default function Home() {
           </div>
         </div>
         <div className='image-row'>
-          <Image
-            src="/cube.jpeg"
-            alt="Cube"
-            className="h-full w-full object-cover"
-            width={1000}
-            height={10}
-          />
+          <img
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            cube-300.jpg 300w,
+            cube-839.jpg 839w,
+            cube-1200.jpg 1200w"
+            src="cube-1200.jpg"
+            className='object-cover h-96'
+            alt="Cube" />
           <div className='image-caption'>
             <Link href="/collectibles" className="caption">
               collectibles
             </Link>
           </div>
         </div>
-        {/* <nav className="flex items-between justify-center absolute w-full bottom-50">
-        </nav> */}
-        
       </div>
     </div>
   )
