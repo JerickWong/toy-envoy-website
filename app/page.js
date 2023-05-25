@@ -16,13 +16,13 @@ export default function Home() {
           />
         </Link>
       </nav>
-      <hr class="m-2 border-t-4 border-black" />
+      <hr className="m-2 border-t-4 border-black" />
       <div className="row">
         <div className='image-row'>
           <Image
             src="/vintage-car.jpg"
-            alt="Toy Envoy Logo"
-            className="h-full object-cover"
+            alt="Vintage Car"
+            className="h-full w-full object-cover"
             width={1000}
             height={10}
           />
@@ -36,7 +36,7 @@ export default function Home() {
           <Image
             src="/cube.jpeg"
             alt="Cube"
-            className="h-full object-cover"
+            className="h-full w-full object-cover"
             width={1000}
             height={10}
           />
