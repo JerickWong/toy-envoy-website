@@ -163,6 +163,23 @@ body {
   }
 }
 
-.max-w-half-screen {
+.max-w-40-screen {
   max-width: 40vw;
+}
+
+.max-w-half-screen {
+  max-width: 50vw;
+}
+
+.min-w-400 {
+  min-width: 400px;
+}
+
+.button-send {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  /* max-width: 16rem; */
 }
