@@ -1,22 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image'
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
     <div className='max-h-screen min-h-screen flex flex-col'>
-      <nav className="flex items-center justify-center">
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="Toy Envoy Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
-        </Link>
-      </nav>
-      <hr className="m-2 border-t-4 border-black" />
+      <Navbar />
       <div className="row">
         <div className='image-row'>
           <img
