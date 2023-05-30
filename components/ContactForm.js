@@ -1,73 +1,75 @@
+/* eslint-disable no-alert */
+
 'use client'
 
-import React, { useState } from 'react';
-import { FiInstagram, FiSend } from 'react-icons/fi';
+import React, { useState } from 'react'
+import { FiInstagram, FiSend } from 'react-icons/fi'
 
 const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const handleSubmit = async e => {
-    e.preventDefault();
-    
+    e.preventDefault()
+
     const response = await fetch('/api/contact', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message })
-    });
+      body: JSON.stringify({ name, email, message }),
+    })
 
     if (response.ok) {
-      alert('Email sent successfully');
+      alert('Email sent successfully')
     } else {
-      alert('There was a problem sending your email');
+      alert('There was a problem sending your email')
     }
-  };
+  }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 min-w-400 font-montserrat">
-      <h1 className="text-2xl">CONTACT INFORMATION</h1>
+    <form onSubmit={handleSubmit} className='flex flex-col gap-4 min-w-400 font-montserrat'>
+      <h1 className='text-2xl'>CONTACT INFORMATION</h1>
       <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
+        type='text'
+        name='name'
+        placeholder='Your Name'
         value={name}
         onChange={e => setName(e.target.value)}
-        className="p-2 border border-gray-300"
+        className='p-2 border border-gray-300'
       />
       <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
+        type='email'
+        name='email'
+        placeholder='Your Email'
         value={email}
         onChange={e => setEmail(e.target.value)}
-        className="p-2 border border-gray-300"
+        className='p-2 border border-gray-300'
       />
       <textarea
-        name="message"
-        rows="4"
-        placeholder="Your Message"
+        name='message'
+        rows='4'
+        placeholder='Your Message'
         value={message}
         onChange={e => setMessage(e.target.value)}
-        className="p-2 border border-gray-300"
+        className='p-2 border border-gray-300'
       />
-      <button type="submit" class="button-send font-montserrat">
+      <button type='submit' className='button-send font-montserrat'>
         Send
       </button>
       <hr />
-      <div className="flex justify-center space-x-4">
-        <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer" className="text-2xl">
+      <div className='flex justify-center space-x-4'>
+        <a href='https://instagram.com/yourusername' target='_blank' rel='noreferrer' className='text-2xl'>
           <FiInstagram />
         </a>
-        <a href="https://t.me/yourusername" target="_blank" rel="noreferrer" className="text-2xl">
+        <a href='https://t.me/yourusername' target='_blank' rel='noreferrer' className='text-2xl'>
           <FiSend />
         </a>
       </div>
-      <p className="text-center">Or message us on Instagram or Telegram!</p>
+      <p className='text-center'>Or message us on Instagram or Telegram!</p>
     </form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm

@@ -1,95 +1,76 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation';
+import SecondaryNavbar from '@/components/SecondaryNavbar'
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <div className='max-h-screen min-h-screen flex flex-col'>
-      <nav className='nav-header'>
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="Toy Envoy Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
-        </Link>
-      </nav>
-      <nav className='nav-main'>
-        <ul>
-          <li>
-            <Link href="/" className='active'>
-              brand x
-            </Link>
-          </li>
-          <li>
-            <Link href="">
-              brand y
-            </Link>
-          </li>
-          <li>
-            <Link href="">
-              brand z
-            </Link>
-          </li>
-          <li>
-            <Link href="">
-              brand a
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <hr className="m-0.5 border-t-2 border-black" />
+      <SecondaryNavbar />
       <section className='my-4 mx-9 flex justify-center gap-4'>
         <div>
-          <img
-            sizes="(max-width: 765px) 100vw, 500px"
-            srcset="
-            vintage-item1-300.jpg 300w,
-            vintage-item1-765.jpg 765w"
-            src="vintage-item1-765.jpg"
-            alt="" />
+          <Image
+            sizes='(max-width: 765px) 100vw, 500px'
+            srcset='
+            /vintage-item1-300.jpg 300w,
+            /vintage-item1-765.jpg 765w'
+            width={100}
+            height={10}
+            src='/vintage-item1-765.jpg'
+            className='w-full'
+            alt='Vintage Car' />
         </div>
-        <div className='flex flex-col max-w-40-screen'>
-          <h2 className='text-4xl mb-1 font-extrabold dark:text-white" font-montserrat'>Brand X Vintage Car</h2>
-          <h3 className="text-3xl mb-2 font-light dark:text-white font-montserrat">$6000.00</h3>
-          <button type="button" className="button-interested font-montserrat" onClick={() => router.push('/contact')}>
+        <div className='flex flex-col max-w-40-screen font-montserrat'>
+          <h2 className='text-4xl mb-1 font-extrabold dark:text-white '>Brand X Vintage Car</h2>
+          <h3 className='text-3xl mb-2 font-light dark:text-white '>$6000.00</h3>
+          <button type='button' className='button-interested ' onClick={() => router.push('/contact')}>
             Interested?
           </button>
-          <p className='font-montserrat'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+           est laborum.
           </p>
         </div>
       </section>
-      <hr className="my-2 border-t-2 border-black" />
-      <div className='flex justify-evenly'>
-        <img
-          sizes="(max-width: 765px) 100vw, 400px"
-          srcset="
-          vintage-item1-300.jpg 300w,
-          vintage-item1-765.jpg 765w"
-          src="vintage-item1-765.jpg"
-          alt="" />
-        <img
-          sizes="(max-width: 765px) 100vw, 400px"
-          srcset="
-          vintage-item1-300.jpg 300w,
-          vintage-item1-765.jpg 765w"
-          src="vintage-item1-765.jpg"
-          alt="" />
-        <img
-          sizes="(max-width: 765px) 100vw, 400px"
-          srcset="
-          vintage-item1-300.jpg 300w,
-          vintage-item1-765.jpg 765w"
-          src="vintage-item1-765.jpg"
-          alt="" />
+      <hr className='my-2 border-t-2 border-black' />
+      <div className='flex justify-evenly gap-4'>
+        <Image
+          sizes='(max-width: 765px) 100vw, 400px'
+          srcset='
+          /vintage-item1-300.jpg 300w,
+          /vintage-item1-765.jpg 765w'
+          width={100}
+            height={10}
+          src='/vintage-item1-765.jpg'
+          className='w-full'
+          alt='Vintage Car' />
+        <Image
+          sizes='(max-width: 765px) 100vw, 400px'
+          srcset='
+          /vintage-item1-300.jpg 300w,
+          /vintage-item1-765.jpg 765w'
+          width={100}
+            height={10}
+          src='/vintage-item1-765.jpg'
+          className='w-full'
+          alt='Vintage Car' />
+        <Image
+          sizes='(max-width: 765px) 100vw, 400px'
+          srcset='
+          /vintage-item1-300.jpg 300w,
+          /vintage-item1-765.jpg 765w'
+          width={100}
+            height={10}
+          src='/vintage-item1-765.jpg'
+          className='w-full'
+          alt='Vintage Car' />
       </div>
     </div>
   )
