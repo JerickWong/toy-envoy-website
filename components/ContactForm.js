@@ -53,7 +53,7 @@ const ContactForm = () => {
         onChange={e => setMessage(e.target.value)}
         className="p-2 border border-gray-300"
       />
-      <button type="button" class="button-send font-montserrat">
+      <button type="submit" class="button-send font-montserrat">
         Send
       </button>
       <hr />
