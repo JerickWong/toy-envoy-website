@@ -11,7 +11,7 @@
   "rules": {
     "semi": ["error", "never"],
     "quotes": ["error", "single"],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": "off",
     "comma-dangle": ["error", "always-multiline"],
     "arrow-parens": ["error", "as-needed"],
     "no-console": "off",
@@ -23,6 +23,22 @@
       "ObjectPattern": { "multiline": true, "consistent": true },
       "ImportDeclaration": { "multiline": true, "consistent": true },
       "ExportDeclaration": { "multiline": true, "consistent": true }
+    }],
+    "import/no-unresolved": ["error", { "ignore": ["^@/"] }],
+    "import/extensions": ["error", "ignorePackages", {
+      "": "never",
+      "js": "never",
+      "jsx": "never",
+      "json": "never",
+      "vue": "never"
     }]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]],
+        "extensions": [".js", ".jsx", ".json"]
+      }
+    }
   }
 }
