@@ -4,7 +4,7 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "endOfLine": "crlf",
+  "endOfLine": "lf",
   "trailingComma": "all",
   "arrowParens": "avoid"
 }
