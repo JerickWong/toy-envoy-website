@@ -223,3 +223,23 @@ body {
   max-width: 350px;
   margin: auto;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 40vw;
+  }
+  .slider {
+    max-width: 40vw;
+  }
+}
+
