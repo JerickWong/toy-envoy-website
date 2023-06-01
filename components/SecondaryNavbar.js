@@ -65,7 +65,7 @@ export default function SecondaryNavbar() {
         leave='transition ease-in duration-300'
         leaveFrom='transform opacity-100 scale-100'
         leaveTo='transform opacity-0 scale-95'
-        className="w-full fixed top-32 bg-white h-56"
+        className="w-full absolute top-32 bg-white h-56 z-10"
       >
         {ref => (
           <nav ref={ref} className='nav-header h-full'>
