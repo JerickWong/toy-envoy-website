@@ -2,13 +2,13 @@
 
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import SecondaryNavbar from '@/components/SecondaryNavbar'
 import { useKeenSlider } from 'keen-slider/react'
+import SecondaryNavbar from '@/components/SecondaryNavbar'
 import 'keen-slider/keen-slider.min.css'
 
 export default function Home() {
   const router = useRouter()
-  const [sliderRef] = useKeenSlider({
+  const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slidesPerView: 1,
     mode: 'free-snap',
@@ -18,18 +18,19 @@ export default function Home() {
   return (
     <div className='max-h-screen min-h-screen flex flex-col'>
       <SecondaryNavbar />
-      <section className='md:flex-row flex-col my-4 mx-9 flex justify-center gap-4'>
+      <section className='md:flex-row flex-col my-4 mx-9 flex justify-center gap-4 md:max-h-half-screen'>
         <div ref={sliderRef} className='keen-slider slider'>
           <div className='keen-slider__slide'>
             <div>
               <Image
-                sizes='(max-width: 765px) 100vw, 500px'
+                sizes='(max-width: 987px) 100vw, 500px'
                 srcset='
                 /vintage-item1-300.jpg 300w,
-                /vintage-item1-765.jpg 765w'
+                /vintage-item1-765.jpg 765w,
+                /vintage-item1-1200.jpg 987w'
                 width={100}
                 height={10}
-                src='/vintage-item1-765.jpg'
+                src='/vintage-item1-987.jpg'
                 className='w-full object-cover'
                 alt='Vintage Car' />
             </div>
@@ -37,13 +38,14 @@ export default function Home() {
           <div className='keen-slider__slide'>
             <div>
               <Image
-                sizes='(max-width: 765px) 100vw, 500px'
+                sizes='(max-width: 987px) 100vw, 500px'
                 srcset='
                 /vintage-item1-300.jpg 300w,
-                /vintage-item1-765.jpg 765w'
+                /vintage-item1-765.jpg 765w,
+                /vintage-item1-1200.jpg 987w'
                 width={100}
                 height={10}
-                src='/vintage-item1-765.jpg'
+                src='/vintage-item1-987.jpg'
                 className='w-full object-cover'
                 alt='Vintage Car' />
             </div>
@@ -51,17 +53,28 @@ export default function Home() {
           <div className='keen-slider__slide'>
             <div>
               <Image
-                sizes='(max-width: 765px) 100vw, 500px'
+                sizes='(max-width: 987px) 100vw, 500px'
                 srcset='
                 /vintage-item1-300.jpg 300w,
-                /vintage-item1-765.jpg 765w'
+                /vintage-item1-765.jpg 765w,
+                /vintage-item1-1200.jpg 987w'
                 width={100}
                 height={10}
-                src='/vintage-item1-765.jpg'
+                src='/vintage-item1-987.jpg'
                 className='w-full object-cover'
                 alt='Vintage Car' />
             </div>
           </div>
+          <button onClick={() => slider.current.prev()} className='previous'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-auto">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+          <button onClick={() => slider.current.next()} className='next'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-auto">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
         </div>
         <div className='content font-montserrat'>
           <h2 className='text-4xl mb-1 font-extrabold dark:text-white '>Brand X Vintage Car</h2>
@@ -82,34 +95,40 @@ export default function Home() {
       <hr className='md:block hidden my-2 border-t-2 border-black' />
       <div className='md:flex justify-evenly gap-4 hidden'>
         <Image
-          sizes='(max-width: 765px) 100vw, 400px'
+          sizes='(max-width: 987px) 100vw, 400px'
           srcset='
           /vintage-item1-300.jpg 300w,
-          /vintage-item1-765.jpg 765w'
+          /vintage-item1-765.jpg 765w,
+          /vintage-item1-1200.jpg 987w'
           width={100}
-            height={10}
-          src='/vintage-item1-765.jpg'
-          className='w-full'
+          height={10}
+          src='/vintage-item1-987.jpg'
+          className='w-full cursor-pointer'
+          onClick={() => slider.current.moveToIdx(0)}
           alt='Vintage Car' />
         <Image
-          sizes='(max-width: 765px) 100vw, 400px'
+          sizes='(max-width: 987px) 100vw, 400px'
           srcset='
           /vintage-item1-300.jpg 300w,
-          /vintage-item1-765.jpg 765w'
+          /vintage-item1-765.jpg 765w,
+          /vintage-item1-1200.jpg 987w'
           width={100}
-            height={10}
-          src='/vintage-item1-765.jpg'
-          className='w-full'
+          height={10}
+          src='/vintage-item1-987.jpg'
+          className='w-full cursor-pointer'
+          onClick={() => slider.current.moveToIdx(1)}
           alt='Vintage Car' />
         <Image
-          sizes='(max-width: 765px) 100vw, 400px'
+          sizes='(max-width: 987px) 100vw, 400px'
           srcset='
           /vintage-item1-300.jpg 300w,
-          /vintage-item1-765.jpg 765w'
+          /vintage-item1-765.jpg 765w,
+          /vintage-item1-1200.jpg 987w'
           width={100}
-            height={10}
-          src='/vintage-item1-765.jpg'
-          className='w-full'
+          height={10}
+          src='/vintage-item1-987.jpg'
+          className='w-full cursor-pointer'
+          onClick={() => slider.current.moveToIdx(2)}
           alt='Vintage Car' />
       </div>
     </div>
