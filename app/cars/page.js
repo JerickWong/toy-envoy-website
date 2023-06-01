@@ -27,7 +27,7 @@ export default function Home() {
                 srcset='
                 /vintage-item1-300.jpg 300w,
                 /vintage-item1-765.jpg 765w,
-                /vintage-item1-1200.jpg 987w'
+                /vintage-item1-987.jpg 987w'
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
@@ -42,7 +42,7 @@ export default function Home() {
                 srcset='
                 /vintage-item1-300.jpg 300w,
                 /vintage-item1-765.jpg 765w,
-                /vintage-item1-1200.jpg 987w'
+                /vintage-item1-987.jpg 987w'
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
@@ -57,7 +57,7 @@ export default function Home() {
                 srcset='
                 /vintage-item1-300.jpg 300w,
                 /vintage-item1-765.jpg 765w,
-                /vintage-item1-1200.jpg 987w'
+                /vintage-item1-987.jpg 987w'
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
@@ -99,7 +99,7 @@ export default function Home() {
           srcset='
           /vintage-item1-300.jpg 300w,
           /vintage-item1-765.jpg 765w,
-          /vintage-item1-1200.jpg 987w'
+          /vintage-item1-987.jpg 987w'
           width={100}
           height={10}
           src='/vintage-item1-987.jpg'
@@ -111,7 +111,7 @@ export default function Home() {
           srcset='
           /vintage-item1-300.jpg 300w,
           /vintage-item1-765.jpg 765w,
-          /vintage-item1-1200.jpg 987w'
+          /vintage-item1-987.jpg 987w'
           width={100}
           height={10}
           src='/vintage-item1-987.jpg'
@@ -123,7 +123,7 @@ export default function Home() {
           srcset='
           /vintage-item1-300.jpg 300w,
           /vintage-item1-765.jpg 765w,
-          /vintage-item1-1200.jpg 987w'
+          /vintage-item1-987.jpg 987w'
           width={100}
           height={10}
           src='/vintage-item1-987.jpg'
