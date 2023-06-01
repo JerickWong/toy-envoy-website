@@ -270,4 +270,10 @@ body {
   max-height: 50vh;
 }
 
+.grabbable {
+  cursor: grab
+}
 
+.grabbable:active {
+  cursor: grabbing
+}

@@ -31,7 +31,7 @@ export default function Home() {
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
-                className='w-full object-cover'
+                className='w-full object-cover grabbable'
                 alt='Vintage Car' />
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
-                className='w-full object-cover'
+                className='w-full object-cover grabbable'
                 alt='Vintage Car' />
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
                 width={100}
                 height={10}
                 src='/vintage-item1-987.jpg'
-                className='w-full object-cover'
+                className='w-full object-cover grabbable'
                 alt='Vintage Car' />
             </div>
           </div>
