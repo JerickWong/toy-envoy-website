@@ -15,7 +15,6 @@ export default function SecondaryNavbar() {
           <Image
             src='/logo.png'
             alt='Toy Envoy Logo'
-            className='dark:invert'
             width={100}
             height={24}
             priority

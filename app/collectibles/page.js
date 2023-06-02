@@ -28,8 +28,8 @@ export default function Home() {
             className='w-full object-cover'
             alt='Cube' />
           <div className='content font-montserrat'>
-            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold dark:text-white '>Brand X Cube</h2>
-            <h3 className='lg:text-3xl text-lg mb-2 font-light dark:text-white '>$6000.00</h3>
+            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold'>Brand X Cube</h2>
+            <h3 className='lg:text-3xl text-lg mb-2 font-light'>$6000.00</h3>
           </div>
         </div>
         <div
@@ -48,8 +48,8 @@ export default function Home() {
             className='w-full object-cover'
             alt='Cube' />
           <div className='content font-montserrat'>
-            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold dark:text-white '>Brand X Cube</h2>
-            <h3 className='lg:text-3xl text-lg mb-2 font-light dark:text-white '>$6000.00</h3>
+            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold'>Brand X Cube</h2>
+            <h3 className='lg:text-3xl text-lg mb-2 font-light'>$6000.00</h3>
           </div>
         </div>
         <div
@@ -68,8 +68,8 @@ export default function Home() {
             className='w-full object-cover'
             alt='Cube' />
           <div className='content font-montserrat'>
-            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold dark:text-white '>Brand X Cube</h2>
-            <h3 className='lg:text-3xl text-lg mb-2 font-light dark:text-white '>$6000.00</h3>
+            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold'>Brand X Cube</h2>
+            <h3 className='lg:text-3xl text-lg mb-2 font-light'>$6000.00</h3>
           </div>
         </div>
         <div
@@ -88,8 +88,8 @@ export default function Home() {
             className='w-full object-cover'
             alt='Cube' />
           <div className='content font-montserrat'>
-            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold dark:text-white '>Brand X Cube</h2>
-            <h3 className='lg:text-3xl text-lg mb-2 font-light dark:text-white '>$6000.00</h3>
+            <h2 className='lg:text-4xl text-xl mb-1 font-extrabold'>Brand X Cube</h2>
+            <h3 className='lg:text-3xl text-lg mb-2 font-light'>$6000.00</h3>
           </div>
         </div>
       </section>

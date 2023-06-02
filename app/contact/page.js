@@ -8,7 +8,7 @@ export default function Contact() {
       <div className='flex flex-col lg:flex-row'>
         <div className='lg:w-1/2 lg:flex justify-center items-center max-w-half-screen mb-52 hidden'>
           <div className='space-y-4 font-montserrat'>
-            <h1 className='text-4xl italic font-bold dark:text-white'>Are you interested?</h1>
+            <h1 className='text-4xl italic font-bold'>Are you interested?</h1>
             <p>Send us your contact information or</p>
             <p>Feel free to email us at insertemail@email.com!</p>
           </div>

@@ -77,8 +77,8 @@ export default function Home() {
           </button>
         </div>
         <div className='content font-montserrat'>
-          <h2 className='text-4xl mb-1 font-extrabold dark:text-white '>Brand X Cube</h2>
-          <h3 className='text-3xl mb-2 font-light dark:text-white '>$6000.00</h3>
+          <h2 className='text-4xl mb-1 font-extrabold'>Brand X Cube</h2>
+          <h3 className='text-3xl mb-2 font-light'>$6000.00</h3>
           <button type='button' className='button-interested ' onClick={() => router.push('/contact')}>
             Interested?
           </button>
