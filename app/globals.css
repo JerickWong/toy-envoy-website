@@ -28,7 +28,6 @@
 }
 
 .image-caption {
-  /* flex justify-center absolute w-full h-16 inset-y-1/2 */
   display: flex;
   justify-content: center;
   position: absolute;
@@ -45,7 +44,6 @@
 
   .row {
     display: flex;
-    /* flex flex-wrap items-center justify-center overflow-hidden relative */
   }
 
   .image-row {
@@ -54,8 +52,6 @@
 }
 
 .caption {
-  /* text-white text text-5xl font-montserrat hover:scale-110 transition-transform border-2 py-2 px-16 duration-300
-text-white text text-5xl font-montserrat hover:scale-110 transition-transform border-2 py-2 px-16 duration-300 */
   color: #fff;
   font-size: 3rem;
   font-family: "Montserrat";
@@ -83,7 +79,6 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-/* Apply the font family to the desired elements */
 .font-garamond {
   font-family: 'garamond', serif;
 }
@@ -108,14 +103,12 @@ body {
 }
 
 .nav-header > ul {
-  /* width: 96vw; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .nav-header > ul > li {
-  /* border-bottom: solid 1px; */
   margin: 7px;
 }
 
@@ -175,26 +168,26 @@ body {
 }
 
 .button-interested:hover {
-  background-color: #2d3748; /* This is the color for bg-gray-900 in Tailwind */
+  background-color: #2d3748;
 }
 
 .button-interested:focus {
   outline: none;
-  box-shadow: 0 0 0 4px #e2e8f0; /* This is the color for ring and ring-gray-300 in Tailwind */
+  box-shadow: 0 0 0 4px #e2e8f0;
 }
 
 @media (prefers-color-scheme: dark) {
   .button-interested {
-      background-color: #2d3748; /* This is the color for bg-gray-800 in Tailwind */
-      border-color: #4a5568; /* This is the color for border-gray-700 in Tailwind */
+    background-color: #2d3748;
+    border-color: #4a5568;
   }
 
   .button-interested:hover {
-      background-color: #4a5568; /* This is the color for hover:bg-gray-700 in Tailwind */
+    background-color: #4a5568;
   }
 
   .button-interested:focus {
-      box-shadow: 0 0 0 4px #4a5568; /* This is the color for focus:ring-gray-700 in Tailwind */
+    box-shadow: 0 0 0 4px #4a5568;
   }
 }
 
@@ -216,7 +209,6 @@ body {
   padding: 0.5rem;
   font-weight: 500;
   font-size: 1.5rem;
-  /* max-width: 16rem; */
 }
 
 .caption-interested {
@@ -276,4 +268,17 @@ body {
 
 .grabbable:active {
   cursor: grabbing;
+}
+
+.card {
+  cursor: pointer;
+  border: solid 1px;
+  padding: 10px;
+  transition: 300ms;
+}
+
+.card:hover {
+  background-color: #c5c5c5;
+  opacity: 0.7;
+  transition: 300ms;
 }

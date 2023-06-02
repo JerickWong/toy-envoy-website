@@ -25,22 +25,22 @@ export default function SecondaryNavbar() {
       <nav className='nav-main'>
         <ul>
           <li>
-            <Link href='/' className='active'>
+            <Link href='/collectibles/brandx' className='active'>
               brand x
             </Link>
           </li>
           <li>
-            <Link href=''>
+            <Link href='/collectibles/brandx'>
               brand y
             </Link>
           </li>
           <li>
-            <Link href=''>
+            <Link href='/collectibles/brandx'>
               brand z
             </Link>
           </li>
           <li>
-            <Link href=''>
+            <Link href='/collectibles/brandx'>
               brand a
             </Link>
           </li>
@@ -71,22 +71,22 @@ export default function SecondaryNavbar() {
           <nav ref={ref} className='nav-header h-full'>
             <ul>
               <li>
-                <Link href='/' className='active'>
+                <Link href='/collectibles/brandx' className='active'>
                   brand x
                 </Link>
               </li>
               <li>
-                <Link href=''>
+                <Link href='/collectibles/brandx'>
                   brand y
                 </Link>
               </li>
               <li>
-                <Link href=''>
+                <Link href='/collectibles/brandx'>
                   brand z
                 </Link>
               </li>
               <li>
-                <Link href=''>
+                <Link href='/collectibles/brandx'>
                   brand a
                 </Link>
               </li>
