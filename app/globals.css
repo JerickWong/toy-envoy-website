@@ -119,11 +119,29 @@ body {
 
   .nav-main {
     display: flex;
+    transition: 300ms;
   }
 
   .active {
+    border-color: black !important;
+  }
+
+  .nav-main > ul > li > a {
     border: solid 2px;
+    border-color: white;
     border-bottom: 0px;
+    transition: 300ms;
+  }
+
+  .nav-main > ul > li > a:hover {
+    border: solid 2px;
+    border-color: black;
+    border-bottom: 0px;
+    transition: 300ms;
+  }
+
+  .active {
+    border-color: black;
   }
 }
 
